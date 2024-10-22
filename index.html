@@ -1,3 +1,5 @@
+<!-- go to terminal and write, npm run watch -->
+ <!-- for more, see package.json file -->
 <!doctype html>
 <html>
 <head>
@@ -15,14 +17,51 @@
 <!-- Swiper's CSS -->
 
 <link rel="stylesheet" href="./output.css">
+
 <title>Planter's Web</title>
 </head>
 
 
 <body>
     <!-- Header -->
-     <header id="navbar">
+     <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div class="font-Lobster sm:text-2xl">Planters World</div>
 
+        <div id="nav-menu" class="absolute top-0 left-0 min-h-[80vh] w-full bg-green-950 backdrop-blur-sm flex items-center justify-center
+        duration-300">
+          <ul class="flex flex-col items-center gap-8">
+            <li>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+
+            <li>
+              <a href="#popular" class="nav-link">Popular</a>
+            </li>
+
+            <li>
+              <a href="#review" class="nav-link">Review</a>
+            </li>
+          </ul>
+
+          <div class="absolute bottom-0 -right-10 opacity-90">
+            <img src="assets/img/leaf-1.png" class="w-32" style="width: 128px;">
+          </div>
+          
+          <div class="absolute -top-5 -left-5 rotate-90 opacity-90">
+            <img src="assets/img/leaf-2.png" class="w-32" style="width: 128px;">
+          </div>
+        </div>
+
+        <!-- Menu Items -->
+        <div>
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
      </header>
 
      <main>
@@ -82,3 +121,7 @@
 </body>
 
 </html>
+
+
+
+<!-- https://youtu.be/zKguO4oaAGs?t=1299 -->
