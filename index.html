@@ -28,9 +28,10 @@
       <nav class="container flex items-center justify-between h-16 sm:h-20">
         <div class="font-Lobster sm:text-2xl">Planters World</div>
 
-        <div id="nav-menu" class="absolute top-0 left-0 min-h-[80vh] w-full bg-green-950 backdrop-blur-sm flex items-center justify-center
-        duration-300">
-          <ul class="flex flex-col items-center gap-8">
+        <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] 
+        w-full bg-green-950 backdrop-blur-sm flex items-center justify-center
+        duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
             <li>
               <a href="#home" class="nav-link">Home</a>
             </li>
@@ -48,18 +49,18 @@
             </li>
           </ul>
 
-          <div class="absolute bottom-0 -right-10 opacity-90">
+          <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
             <img src="assets/img/leaf-1.png" class="w-32" style="width: 128px;">
           </div>
           
-          <div class="absolute -top-5 -left-5 rotate-90 opacity-90">
+          <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
             <img src="assets/img/leaf-2.png" class="w-32" style="width: 128px;">
           </div>
         </div>
 
         <!-- Menu Items -->
-        <div>
-          <i class="ri-menu-4-line"></i>
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+          <i class="ri-menu-4-line" id="hamburger"></i>
         </div>
       </nav>
      </header>
@@ -117,6 +118,7 @@
      <!-- SCROLLREVEAL -->
 
      <!-- mainjs -->
+      <script src="main.js"></script>
 
 </body>
 
